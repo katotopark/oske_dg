@@ -1,6 +1,15 @@
 <template>
   <el-container>
     <el-main>
+      <!-- <div
+        v-if="!open"
+        class="confirm-box">
+        <el-button
+          class="confirm-button"
+          @click="open = true">
+          hello
+        </el-button>
+      </div> -->
       <el-row
         class="contain"
         type="flex"
@@ -58,13 +67,14 @@ export default {
       modes: ['Normal', 'Kibariye', 'Öküzbaş'],
       modeCounter: 0,
       buttonText: '',
-      hitap: ''
+      hitap: '',
+      open: false
     }
   },
   watch: {
     currentMode() {
       if (this.currentMode == this.modes[0]) this.hitap = ''
-      else if (this.currentMode == this.modes[1]) this.hitap = 'sevgili'
+      else if (this.currentMode == this.modes[1]) this.hitap = 'sayın'
       else if (this.currentMode == this.modes[2]) this.hitap = 'lan'
     }
   },
@@ -94,6 +104,21 @@ export default {
 </script>
 
 <style>
+div.confirm-box {
+  min=width: 100vh;
+  min-height: 100vh;
+  background-color: #82c2a2;
+}
+.el-button.confirm-button {
+  background-color: inherit;
+  border-radius: 0px;
+  color: #b75556;
+  font-size: 3rem;
+  font-family: inherit;
+  font-weight: 300;
+  padding: 20px 15px;
+  border: 4px solid #b75556;
+}
 .contain {
   background-color: #82c2a2;
   min-height: 100vh;
