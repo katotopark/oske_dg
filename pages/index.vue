@@ -104,14 +104,13 @@ export default {
 .title {
   display: block;
   font-weight: 500;
-  font-size: 80px;
+  font-size: 70px;
   color: #b75556;
   letter-spacing: 1px;
-  line-height: 150px;
+  line-height: 120px;
   margin-bottom: 20px;
 }
 .el-button.name-button,
-.el-button.name-button:hover,
 .el-button.name-button:active,
 .el-button.name-button:visited,
 .el-button.name-button:focus {
@@ -119,11 +118,16 @@ export default {
   font-size: inherit;
   font-weight: inherit;
   border-radius: 0px;
+  color: #b75556;
+  background-color: #82c2a2;
+  border: 4px solid #b75556;
+  padding: 20px 15px;
+}
+.el-button.name-button:hover {
   color: #82c2a2;
   background-color: #b75556;
-  border-color: transparent;
-  padding: 30px 15px;
 }
+
 .el-button.mode-button {
   background-color: inherit;
   border-radius: 0px;
@@ -133,6 +137,7 @@ export default {
   font-weight: 300;
   padding: 20px 15px;
   margin-top: 60px;
+  margin-bottom: 30px;
   border: 4px solid #b75556;
 }
 .el-button.mode-button:hover,
