@@ -14,7 +14,10 @@
         class="contain"
         type="flex"
         justify="center">
-        <el-col :span="20">
+        <el-col
+          :xs="22"
+          :sm="20"
+          :md="20">
           <el-row>
             <h2 class="title">
               İyi ki doğdun {{ hitap }}
